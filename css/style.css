@@ -126,7 +126,7 @@ html,
     margin: 0px 10px;
     height: 2px;
     top: 0px;
-    z-index: 1;
+    z-index: 99999;
     background: #d9dde3;
 }
 
@@ -274,7 +274,6 @@ html,
     padding: 35px 15px 15px 15px;
     font-size: 1.2rem;
     font-weight: 400;
-    position: relative;
 }
 
 .inset-0 {
@@ -308,33 +307,6 @@ html,
     font-weight: 700;
     text-align: center;
 }
-
-.basket-footer .basket-drinks {
-    margin: .5rem 0 1rem 0;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
-    ;
-}
-
-.basket-footer .basket-drink-img {
-    width: 6rem;
-    height: 6rem;
-    object-fit: cover;
-
-}
-
-.basket-footer .basket-drinks-main {
-    padding: 1rem;
-    font-family: var(--Nunito);
-    font-size: 1.4rem;
-}
-
-.basket-footer .basket-drinks-btn {
-    font-family: var(--Nunito);
-    font-size: 1.4rem;
-    padding: 1.7rem;
-
-}
-
 
 /* Scrollbar css */
 /* width */
@@ -848,14 +820,12 @@ input.no-errors {
         position: fixed;
     }
 
-    .basket-footer .card,
     .basket-main .card {
         border: none;
         outline: none;
         font-size: 1.3rem;
     }
 
-    .basket-footer .accordian,
     .basket-main .accordian {
         max-width: 350px;
         margin-right: auto;
@@ -863,22 +833,12 @@ input.no-errors {
         padding: 5px;
     }
 
-    .basket-footer .btn,
     .basket-main .btn {
         font-size: 1.5rem;
         text-decoration: none;
         font-family: var(--poppins);
         color: #000;
-        font-weight: 700;
-    }
-
-    .basket-footer .card .card-body {
-        font-size: 1.4rem;
-        text-decoration: none;
-        font-family: var(--poppins);
-        color: #000;
-        font-weight: 400;
-        padding: 1rem 1rem 1rem 2rem;
+        font-weight: 600;
     }
 
     .basket-main .card .card-body {
@@ -890,47 +850,21 @@ input.no-errors {
         margin-left: 40px;
     }
 
-    .basket-footer .btn:focus,
     .basket-main .btn:focus {
         outline: none;
         box-shadow: none;
     }
 
-    .basket-footer .card-header,
     .basket-main .card-header {
         background-color: white;
         border-bottom: none;
     }
 
-    .basket-footer .fa-chevron-right,
-    .basket-footer .fa-chevron-down,
     .basket-main .fa-chevron-right,
     .basket-main .fa-chevron-down,
-    .basket-main .fa-times,
-    .basket-footer .fa-times {
+    .basket-main .fa-times {
         font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.4);
-    }
-
-    .basket-sub-total {
-        font-family: var(--Nunito);
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-
-    .basket-sub-total .sub-total {
-        padding: 1rem 1rem 0 1rem;
-    }
-
-    .treat .title-2 {
-        font-family: var(--Nunito);
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-align: left;
-        padding: 0;
-        margin: 0;
-        align-items: flex-start;
-        justify-content: flex-start;
     }
 
     .side-menu {
@@ -955,130 +889,6 @@ input.no-errors {
 
     /* Sidebar */
 
-    /*Modal Css*/
-    /* .modal{
-        overflow: auto;
-    } */
-    .modal,
-    .modal-header,
-    .modal-footer .btn {
-        font-family: var(--Nunito);
-        font-size: 1.5rem;
-        cursor: default;
-    }   
-
-    .modal::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 0;
-        background-color: black;
-    }
-
-    /* .btn-close {
-      
-    } */
-
-    .modal-title-header {
-        font-size: 3rem;
-        font-weight: 700;
-        padding: 2rem 0 3rem 0;
-
-    }
-
-    .modal-bg {
-        background-image: url(../images/Modal/modal-bg.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .modal-body {
-        padding: 0;
-        position: relative;
-        font-size: 1.5rem;
-        width: 100%;
-        overflow: hidden;
-        height: auto;
-    }
-
-
-    .modal-hr {
-        margin-right: 1rem;
-    }
-
-    .typography1 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        font-family: var(--poppins);
-    }
-
-    .typography2 {
-        font-size: 1.8rem;
-        font-weight: 700;
-        font-family: var(--Nunito);
-    }
-
-
-    .typography3 {
-        font-size: 1.8rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-
-    }
-
-    .typography4 {
-        font-size: 1.8rem;
-        font-weight: 300;
-
-    }
-
-    .typography3::after {
-        flex: 1 1 0%;
-        position: relative;
-        content: "";
-        margin: 0px 10px;
-        height: 2px;
-        top: 0px;
-        z-index: 1;
-        background: #d9dde3;
-    }
-    .btn-close{
-        position: absolute;
-        top: 1.5rem;
-        right: 2rem;
-    }
-
-    .pizza-select-body{
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 30rem;       
-    }
-
-    .pizza-select-footer{
-        position: fixed;
-        bottom: 0;
-    }
-    .pizza-select-btn{
-        box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, .15);
-        padding: 3rem 3rem 2rem 3rem;
-        margin-left: -1.3rem;
-    }
-    .pizza-select-btn .btn{
-        padding: 1rem;
-        font-size: 1.6rem;
-        font-family: var(--Nunito);
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-   
 
 
 }
