@@ -1,0 +1,129 @@
+#sidebar {
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: red;
+    z-index: 10000;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#sidebar:hover {
+    width: 250px;
+}
+
+#sidebar:hover .mylogo {
+    display: block;
+}
+
+main,
+footer {
+    position: relative;
+    margin-left: 250px;
+}
+
+
+#sidebar .fa,
+#sidebar .fas {
+    margin-right: 50px;
+}
+
+#sidebar .mylogo {
+    margin-top: 1rem;
+    margin-left: .5rem;
+    width: 170px;
+    height: auto;
+    /* display: none; */
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+header .navbar-brand {
+    display: none;
+}
+
+#sidebar ul {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    /* margin-left: 10px; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#sidebar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+#sidebar ul li a {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#sidebar .my-check {
+    position: absolute;
+    right: 15px;
+    top: 1.5rem;
+    width: 5px !important;
+    height: 5px !important;
+
+}
+
+#sidebar ul li a .icon {
+    position: relative;
+    display: block;
+    /* background-color: aqua; */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+#sidebar ul li a .text {
+    position: relative;
+    /* background-color: blueviolet; */
+    padding: 0px;
+    height: 45px;
+    line-height: 45px;
+    text-align: start;
+    white-space: nowrap;
+
+}
+
+
+#sidebar ul li a .icon .fa,
+#sidebar ul li a .icon .far,
+#sidebar ul li a .icon .fas,
+#sidebar ul li a .icon .fab {
+    font-size: 24px;
+}
+
+#sidebar ul li:hover {
+    background-color: white;
+
+}
+
+#sidebar ul li:hover a {
+    color: #000;
+}
